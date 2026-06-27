@@ -1,541 +1,1020 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Target Point Deliveries & Errands | Fast, Reliable, Always on Point</title>
-  <meta name="description" content="Nairobi's fastest motorcycle courier service. Same-day parcel delivery, business errands & document dispatch across the city. Call 0797 939 390." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Target Point Deliveries & Errands | Fast, Reliable, Always on Point
+    </title>
+    <meta
+      name="description"
+      content="Nairobi's fastest motorcycle courier service. Same-day parcel delivery, business errands & document dispatch across the city. Call 0797 939 390."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- FLOATING WHATSAPP -->
+    <a
+      href="https://wa.me/254797939390?text=Hi%20Target%20Point%2C%20I%27d%20like%20to%20make%20a%20delivery%20enquiry."
+      class="wa-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+      <span>Order Now</span>
+    </a>
 
-  <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/254797939390?text=Hi%20Target%20Point%2C%20I%27d%20like%20to%20make%20a%20delivery%20enquiry." class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span>Order Now</span>
-  </a>
-
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <div class="nav-logo-mark">
-         
-        <div>
-          <span class="nav-name">Target Point</span>
-          <span class="nav-sub">Deliveries</span>
-        </div>
-      </a>
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <a href="tel:0797939390" class="btn-nav">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        Call Us
-      </a>
-      <button class="nav-burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="nav-mobile" id="navMobile">
-      <a href="#services" onclick="closeMobile()">Services</a>
-      <a href="#how" onclick="closeMobile()">How it works</a>
-      <a href="#pricing" onclick="closeMobile()">Pricing</a>
-      <a href="#contact" onclick="closeMobile()">Contact</a>
-      <a href="tel:0797939390" class="btn-nav-mobile">Call 0797 939 390</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span class="pulse-dot"></span>
-          Nairobi's On-Demand Courier
-        </div>
-        <h1 class="hero-h1">
-          We Deliver<br/>
-          <span class="hero-accent">On Time.</span><br/>
-          Every Time.
-        </h1>
-        <p class="hero-desc">Same-day parcel delivery, business errands & document dispatch across Nairobi. One call and we're on the way.</p>
-        <div class="hero-ctas">
-          <a href="tel:0797939390" class="btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            Call 0797 939 390
-          </a>
-          <a href="https://wa.me/254797939390?text=Hi%20Target%20Point%2C%20I%27d%20like%20to%20make%20a%20delivery%20enquiry." target="_blank" class="btn-secondary">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            WhatsApp Us
-          </a>
-        </div>
-        <div class="hero-trust">
-          <div class="trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#E8491D" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Same-day delivery
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-mark">
+            <img
+              src="/targetpointdeliveries/logo2.png"
+              alt="Target Point Deliveries Logo"
+            />
           </div>
-          <div class="trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#E8491D" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            City-wide coverage
-          </div>
-          <div class="trust-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#E8491D" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Always trackable
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card-stack">
-          <div class="hero-card hero-card-back">
-            <div class="hc-label">Delivery confirmed</div>
-            <div class="hc-sub">CBD → Westlands</div>
-            <div class="hc-time">12 min ago</div>
-          </div>
-          <div class="hero-card hero-card-front">
-            <div class="hc-top">
-              <div class="hc-icon">
-                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#E8491D" opacity="0.15"/><path d="M8 24 C8 14 14 8 24 8 S40 14 40 24 S34 40 24 40 S8 34 8 24" stroke="#E8491D" stroke-width="2" fill="none"/><circle cx="24" cy="24" r="5" fill="#E8491D"/></svg>
-              </div>
-              <div>
-                <div class="hc-status">On the way</div>
-                <div class="hc-rider">Rider: Brian J.</div>
-              </div>
-              <div class="hc-badge">LIVE</div>
-            </div>
-            <div class="hc-route">
-              <div class="hc-point hc-point-from">
-                <span class="dot dot-orange"></span>
-                <span>Kenbanco House</span>
-              </div>
-              <div class="hc-line-vert"></div>
-              <div class="hc-point hc-point-to">
-                <span class="dot dot-navy"></span>
-                <span>Westlands, Nairobi</span>
-              </div>
-            </div>
-            <div class="hc-eta">
-              <span class="eta-label">ETA</span>
-              <span class="eta-val">14 min</span>
-            </div>
-          </div>
-          <div class="hero-stat-pill hero-stat-1">
-            <span class="stat-num" data-target="1000">0</span>+
-            <span class="stat-lbl">Deliveries done</span>
-          </div>
-          <div class="hero-stat-pill hero-stat-2">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#E8491D" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Trusted by 50+ businesses
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll to explore</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- STATS BAR -->
-  <section class="stats-bar">
-    <div class="stats-inner">
-      <div class="stat-item">
-        <div class="stat-number"><span data-target="1000" class="counter">0</span>+</div>
-        <div class="stat-label">Deliveries completed</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-number"><span data-target="20" class="counter">0</span></div>
-        <div class="stat-label">Delivery zones</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-number"><span data-target="50" class="counter">0</span>+</div>
-        <div class="stat-label">Business clients</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-number">24/7</div>
-        <div class="stat-label">Always available</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="eyebrow">What we do</div>
-        <h2>Built for every<br/><span class="text-orange">delivery need</span></h2>
-        <p>From urgent parcels to weekly business runs — we cover it all across Nairobi.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="26" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M6 22h36" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="32" r="3" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="3" stroke="currentColor" stroke-width="2"/><path d="M16 8l4 6M32 8l-4 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Express Parcel Delivery</h3>
-          <p>Same-day door-to-door delivery for parcels, packages, and goods of all sizes across Nairobi.</p>
-          <div class="service-tag">Same day</div>
-        </div>
-        <div class="service-card service-card-featured reveal">
-          <div class="service-featured-label">Most popular</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6C14.06 6 6 14.06 6 24s8.06 18 18 18 18-8.06 18-18S33.94 6 24 6z" stroke="currentColor" stroke-width="2.5"/><path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Business Errand Runs</h3>
-          <p>Bank runs, supplier pickups, office supply collection, inter-branch transfers. Your dedicated errand team.</p>
-          <div class="service-tag">B2B favourite</div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M12 6h24v36H12z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M18 16h12M18 22h12M18 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Document Dispatch</h3>
-          <p>Contracts, legal documents, certificates, and correspondence — delivered fast and handled with care.</p>
-          <div class="service-tag">Confidential</div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M6 40l10-10M42 6L32 16m0 0l-8 2-2 8 10-10z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="36" r="4" stroke="currentColor" stroke-width="2.5"/><circle cx="36" cy="12" r="4" stroke="currentColor" stroke-width="2.5"/></svg>
-          </div>
-          <h3>Drop-off & Pickup</h3>
-          <p>Need something collected from one point and delivered to another? We handle both ends reliably.</p>
-          <div class="service-tag">Flexible</div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M6 24h36M24 6v36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.5"/></svg>
-          </div>
-          <h3>E-commerce Fulfillment</h3>
-          <p>Selling online? We plug into your workflow and handle last-mile delivery so your customers are never waiting.</p>
-          <div class="service-tag">Online sellers</div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6l4 8 9 1.3-6.5 6.3 1.5 9L24 26l-8 4.6 1.5-9L11 15.3l9-1.3z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 34v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Personal Shopping</h3>
-          <p>Too busy to run out? Tell us what you need, where to get it, and we'll bring it straight to your door.</p>
-          <div class="service-tag">Convenience</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="how" id="how">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="eyebrow">Simple process</div>
-        <h2>Three steps to<br/><span class="text-orange">your delivery</span></h2>
-      </div>
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step-num">01</div>
-          <div class="step-body">
-            <h3>Call or WhatsApp</h3>
-            <p>Tell us pickup location, drop-off, and what you're sending. Takes 60 seconds. No app needed.</p>
-          </div>
-          <div class="step-arrow">→</div>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">02</div>
-          <div class="step-body">
-            <h3>Rider dispatched</h3>
-            <p>We assign the nearest available rider immediately. They head to your pickup point without delay.</p>
-          </div>
-          <div class="step-arrow">→</div>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">03</div>
-          <div class="step-body">
-            <h3>Delivered & confirmed</h3>
-            <p>Your package arrives at the destination. You get confirmation. Pay via M-Pesa Till 9433707.</p>
-          </div>
-          <div class="step-arrow" style="opacity:0"></div>
-        </div>
-      </div>
-      <div class="how-cta reveal">
-        <a href="tel:0797939390" class="btn-primary">Start your delivery now</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section class="why" id="why">
-    <div class="why-bg"></div>
-    <div class="container">
-      <div class="why-inner">
-        <div class="why-left reveal">
-          <div class="eyebrow eyebrow-light">Why Target Point</div>
-          <h2 class="why-h2">We don't just deliver packages.<br/>We deliver <span class="text-orange">confidence.</span></h2>
-          <p class="why-desc">Every order is a promise. We've built our entire operation around making sure that promise is never broken.</p>
-          <a href="https://wa.me/254797939390?text=Hi%20Target%20Point%2C%20I%27d%20like%20to%20make%20a%20delivery%20enquiry." target="_blank" class="btn-primary">Book a delivery</a>
-        </div>
-        <div class="why-right reveal">
-          <div class="why-card">
-            <div class="why-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3L3 9v8c0 7.18 5.58 13.89 13 15.93C23.42 30.89 29 24.18 29 17V9L16 3z" stroke="#E8491D" stroke-width="2" fill="rgba(232,73,29,0.1)"/><path d="M11 16l3 3 7-7" stroke="#E8491D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div>
-              <h4>Reliable every time</h4>
-              <p>Consistent, professional service. Your parcels are treated with the same care whether it's your first order or your hundredth.</p>
-            </div>
-          </div>
-          <div class="why-card">
-            <div class="why-icon"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="#E8491D" stroke-width="2" fill="rgba(232,73,29,0.1)"/><path d="M16 9v7l4 4" stroke="#E8491D" stroke-width="2.5" stroke-linecap="round"/></svg></div>
-            <div>
-              <h4>Speed is non-negotiable</h4>
-              <p>Motorcycle fleet means we skip traffic. Same-day delivery is our standard, not an upgrade.</p>
-            </div>
-          </div>
-          <div class="why-card">
-            <div class="why-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3C9 3 3 9 3 16s6 13 13 13 13-6 13-13S23 3 16 3z" stroke="#E8491D" stroke-width="2" fill="rgba(232,73,29,0.1)"/><path d="M10 16l4 4 8-8" stroke="#E8491D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div>
-              <h4>Tech-powered tracking</h4>
-              <p>Every order is logged in our dispatch system. You always know what's happening with your delivery.</p>
-            </div>
-          </div>
-          <div class="why-card">
-            <div class="why-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M4 12h24M4 20h24M12 4v24M20 4v24" stroke="#E8491D" stroke-width="2" stroke-linecap="round" opacity="0.4"/><circle cx="16" cy="16" r="10" stroke="#E8491D" stroke-width="2" fill="rgba(232,73,29,0.1)"/><path d="M16 12v4l3 2" stroke="#E8491D" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <div>
-              <h4>City-wide coverage</h4>
-              <p>20 delivery zones across Nairobi. CBD to the suburbs — if you're in Nairobi, we can reach you.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="eyebrow">Transparent pricing</div>
-        <h2>No hidden fees.<br/><span class="text-orange">Just fair rates.</span></h2>
-        <p>All rates are fixed and clear upfront. Pay via M-Pesa Till <strong>9433707</strong> after delivery.</p>
-      </div>
-      <div class="pricing-grid reveal">
-        <div class="price-card">
-          <div class="price-zone">CBD & surroundings</div>
-          <div class="price-examples">Westlands · Ngara · Pangani · Upper Hill</div>
-          <div class="price-from">From</div>
-          <div class="price-amount">KES 200</div>
-          <div class="price-note">Per delivery</div>
-        </div>
-        <div class="price-card price-card-mid">
-          <div class="price-badge">Most orders</div>
-          <div class="price-zone">Mid Nairobi</div>
-          <div class="price-examples">Eastleigh · Kasarani · Roysambu · Ruaka</div>
-          <div class="price-from">From</div>
-          <div class="price-amount">KES 300</div>
-          <div class="price-note">Per delivery</div>
-        </div>
-        <div class="price-card">
-          <div class="price-zone">Outer Nairobi</div>
-          <div class="price-examples">Thika Rd · Ngong Rd · Rongai · Githurai</div>
-          <div class="price-from">From</div>
-          <div class="price-amount">KES 400+</div>
-          <div class="price-note">Per delivery</div>
-        </div>
-      </div>
-      <div class="pricing-note reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#E8491D" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        Exact rates depend on distance within zones. Call or WhatsApp for a quick quote on your specific route.
-      </div>
-      <div class="pricing-mpesa reveal">
-        <div class="mpesa-label">M-Pesa Till Number</div>
-        <div class="mpesa-num">9433707</div>
-        <div class="mpesa-sub">Pay after delivery confirmation</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="eyebrow">What clients say</div>
-        <h2>Real businesses.<br/><span class="text-orange">Real results.</span></h2>
-      </div>
-      <div class="testi-grid">
-        <div class="testi-card reveal">
-          <div class="testi-stars">★★★★★</div>
-          <p>"We use Target Point for all our inter-office deliveries and client document drops. Never had a late delivery. These guys are as reliable as it gets."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">JM</div>
-            <div>
-              <div class="testi-name">James M.</div>
-              <div class="testi-role">Operations Manager, Nairobi</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card reveal">
-          <div class="testi-stars">★★★★★</div>
-          <p>"I run an online boutique and Target Point handles all my deliveries. My customers are always happy — orders arrive same day, every time."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">AW</div>
-            <div>
-              <div class="testi-name">Amina W.</div>
-              <div class="testi-role">Online Boutique Owner</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card reveal">
-          <div class="testi-stars">★★★★★</div>
-          <p>"Quick response, professional riders, and the WhatsApp updates are a nice touch. Target Point is now our go-to for all urgent errands."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">PO</div>
-            <div>
-              <div class="testi-name">Peter O.</div>
-              <div class="testi-role">Procurement Officer</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <section class="cta-band">
-    <div class="cta-band-inner">
-      <div class="cta-band-text reveal">
-        <h2>Ready to move something?</h2>
-        <p>One call and our rider is on the way. Fast, reliable, always on point.</p>
-      </div>
-      <div class="cta-band-actions reveal">
-        <a href="tel:0797939390" class="btn-primary btn-large">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          0797 939 390
         </a>
-        <a href="https://wa.me/254797939390?text=Hi%20Target%20Point%2C%20I%27d%20like%20to%20make%20a%20delivery%20enquiry." target="_blank" class="btn-outline-white">
-          WhatsApp Order
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="tel:0797939390" class="btn-nav">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+            />
+          </svg>
+          Call Us
         </a>
+        <button class="nav-burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </div>
-  </section>
+      <div class="nav-mobile" id="navMobile">
+        <a href="#services" onclick="closeMobile()">Services</a>
+        <a href="#how" onclick="closeMobile()">How it works</a>
+        <a href="#pricing" onclick="closeMobile()">Pricing</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+        <a href="tel:0797939390" class="btn-nav-mobile">Call 0797 939 390</a>
+      </div>
+    </nav>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-left reveal">
-          <div class="eyebrow">Get in touch</div>
-          <h2>We're always<br/><span class="text-orange">ready to move.</span></h2>
-          <p>Reach out via call, WhatsApp, or find us at our Nairobi office. We respond fast — always.</p>
-          <div class="contact-items">
-            <a href="tel:0797939390" class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              </div>
-              <div>
-                <div class="ci-label">Call us</div>
-                <div class="ci-value">0797 939 390</div>
-              </div>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="pulse-dot"></span>
+            Nairobi's On-Demand Courier
+          </div>
+          <h1 class="hero-h1">
+            We Deliver<br />
+            <span class="hero-accent">On Time.</span><br />
+            Every Time.
+          </h1>
+          <p class="hero-desc">
+            Same-day parcel delivery, business errands & document dispatch
+            across Nairobi. One call and we're on the way.
+          </p>
+          <div class="hero-ctas">
+            <a href="tel:0797939390" class="btn-primary">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                />
+              </svg>
+              Call 0797 939 390
             </a>
-            <a href="https://wa.me/254797939390" target="_blank" class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              </div>
-              <div>
-                <div class="ci-label">WhatsApp</div>
-                <div class="ci-value">+254 797 939 390</div>
-              </div>
+            <a
+              href="https://wa.me/254797939390?text=Hi%20Target%20Point%2C%20I%27d%20like%20to%20make%20a%20delivery%20enquiry."
+              target="_blank"
+              class="btn-secondary"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              WhatsApp Us
             </a>
-            <div class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#E8491D"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              Same-day delivery
+            </div>
+            <div class="trust-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#E8491D"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              City-wide coverage
+            </div>
+            <div class="trust-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#E8491D"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              Always trackable
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="hero-card hero-card-back">
+              <div class="hc-label">Delivery confirmed</div>
+              <div class="hc-sub">CBD → Westlands</div>
+              <div class="hc-time">12 min ago</div>
+            </div>
+            <div class="hero-card hero-card-front">
+              <div class="hc-top">
+                <div class="hc-icon">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="22"
+                      fill="#E8491D"
+                      opacity="0.15"
+                    />
+                    <path
+                      d="M8 24 C8 14 14 8 24 8 S40 14 40 24 S34 40 24 40 S8 34 8 24"
+                      stroke="#E8491D"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <circle cx="24" cy="24" r="5" fill="#E8491D" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="hc-status">On the way</div>
+                  <div class="hc-rider">Rider: Brian J.</div>
+                </div>
+                <div class="hc-badge">LIVE</div>
               </div>
-              <div>
-                <div class="ci-label">Location</div>
-                <div class="ci-value">Kenbanco House, Opposite Railways, Nairobi</div>
+              <div class="hc-route">
+                <div class="hc-point hc-point-from">
+                  <span class="dot dot-orange"></span>
+                  <span>Kenbanco House</span>
+                </div>
+                <div class="hc-line-vert"></div>
+                <div class="hc-point hc-point-to">
+                  <span class="dot dot-navy"></span>
+                  <span>Westlands, Nairobi</span>
+                </div>
+              </div>
+              <div class="hc-eta">
+                <span class="eta-label">ETA</span>
+                <span class="eta-val">14 min</span>
               </div>
             </div>
-            <div class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <div class="hero-stat-pill hero-stat-1">
+              <span class="stat-num" data-target="1000">0</span>+
+              <span class="stat-lbl">Deliveries done</span>
+            </div>
+            <div class="hero-stat-pill hero-stat-2">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#E8491D"
+                stroke-width="2"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Trusted by 50+ businesses
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <div class="stat-number">
+            <span data-target="1000" class="counter">0</span>+
+          </div>
+          <div class="stat-label">Deliveries completed</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">
+            <span data-target="20" class="counter">0</span>
+          </div>
+          <div class="stat-label">Delivery zones</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">
+            <span data-target="50" class="counter">0</span>+
+          </div>
+          <div class="stat-label">Business clients</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Always available</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow">What we do</div>
+          <h2>
+            Built for every<br /><span class="text-orange">delivery need</span>
+          </h2>
+          <p>
+            From urgent parcels to weekly business runs — we cover it all across
+            Nairobi.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="6"
+                  y="14"
+                  width="36"
+                  height="26"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+                <path d="M6 22h36" stroke="currentColor" stroke-width="2.5" />
+                <circle
+                  cx="16"
+                  cy="32"
+                  r="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M16 8l4 6M32 8l-4 6"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Express Parcel Delivery</h3>
+            <p>
+              Same-day door-to-door delivery for parcels, packages, and goods of
+              all sizes across Nairobi.
+            </p>
+            <div class="service-tag">Same day</div>
+          </div>
+          <div class="service-card service-card-featured reveal">
+            <div class="service-featured-label">Most popular</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M24 6C14.06 6 6 14.06 6 24s8.06 18 18 18 18-8.06 18-18S33.94 6 24 6z"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M24 14v10l6 4"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Business Errand Runs</h3>
+            <p>
+              Bank runs, supplier pickups, office supply collection,
+              inter-branch transfers. Your dedicated errand team.
+            </p>
+            <div class="service-tag">B2B favourite</div>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M12 6h24v36H12z"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18 16h12M18 22h12M18 28h8"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Document Dispatch</h3>
+            <p>
+              Contracts, legal documents, certificates, and correspondence —
+              delivered fast and handled with care.
+            </p>
+            <div class="service-tag">Confidential</div>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M6 40l10-10M42 6L32 16m0 0l-8 2-2 8 10-10z"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="12"
+                  cy="36"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+                <circle
+                  cx="36"
+                  cy="12"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+              </svg>
+            </div>
+            <h3>Drop-off & Pickup</h3>
+            <p>
+              Need something collected from one point and delivered to another?
+              We handle both ends reliably.
+            </p>
+            <div class="service-tag">Flexible</div>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M6 24h36M24 6v36"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="16"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                />
+              </svg>
+            </div>
+            <h3>E-commerce Fulfillment</h3>
+            <p>
+              Selling online? We plug into your workflow and handle last-mile
+              delivery so your customers are never waiting.
+            </p>
+            <div class="service-tag">Online sellers</div>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M24 6l4 8 9 1.3-6.5 6.3 1.5 9L24 26l-8 4.6 1.5-9L11 15.3l9-1.3z"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M24 34v8"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Personal Shopping</h3>
+            <p>
+              Too busy to run out? Tell us what you need, where to get it, and
+              we'll bring it straight to your door.
+            </p>
+            <div class="service-tag">Convenience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow">Simple process</div>
+          <h2>
+            Three steps to<br /><span class="text-orange">your delivery</span>
+          </h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h3>Call or WhatsApp</h3>
+              <p>
+                Tell us pickup location, drop-off, and what you're sending.
+                Takes 60 seconds. No app needed.
+              </p>
+            </div>
+            <div class="step-arrow">→</div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3>Rider dispatched</h3>
+              <p>
+                We assign the nearest available rider immediately. They head to
+                your pickup point without delay.
+              </p>
+            </div>
+            <div class="step-arrow">→</div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3>Delivered & confirmed</h3>
+              <p>
+                Your package arrives at the destination. You get confirmation.
+                Pay via M-Pesa Till 9433707.
+              </p>
+            </div>
+            <div class="step-arrow" style="opacity: 0"></div>
+          </div>
+        </div>
+        <div class="how-cta reveal">
+          <a href="tel:0797939390" class="btn-primary"
+            >Start your delivery now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why" id="why">
+      <div class="why-bg"></div>
+      <div class="container">
+        <div class="why-inner">
+          <div class="why-left reveal">
+            <div class="eyebrow eyebrow-light">Why Target Point</div>
+            <h2 class="why-h2">
+              We don't just deliver packages.<br />We deliver
+              <span class="text-orange">confidence.</span>
+            </h2>
+            <p class="why-desc">
+              Every order is a promise. We've built our entire operation around
+              making sure that promise is never broken.
+            </p>
+            <a
+              href="https://wa.me/254797939390?text=Hi%20Target%20Point%2C%20I%27d%20like%20to%20make%20a%20delivery%20enquiry."
+              target="_blank"
+              class="btn-primary"
+              >Book a delivery</a
+            >
+          </div>
+          <div class="why-right reveal">
+            <div class="why-card">
+              <div class="why-icon">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M16 3L3 9v8c0 7.18 5.58 13.89 13 15.93C23.42 30.89 29 24.18 29 17V9L16 3z"
+                    stroke="#E8491D"
+                    stroke-width="2"
+                    fill="rgba(232,73,29,0.1)"
+                  />
+                  <path
+                    d="M11 16l3 3 7-7"
+                    stroke="#E8491D"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div>
-                <div class="ci-label">M-Pesa Till</div>
-                <div class="ci-value">9433707</div>
+                <h4>Reliable every time</h4>
+                <p>
+                  Consistent, professional service. Your parcels are treated
+                  with the same care whether it's your first order or your
+                  hundredth.
+                </p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <circle
+                    cx="16"
+                    cy="16"
+                    r="13"
+                    stroke="#E8491D"
+                    stroke-width="2"
+                    fill="rgba(232,73,29,0.1)"
+                  />
+                  <path
+                    d="M16 9v7l4 4"
+                    stroke="#E8491D"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4>Speed is non-negotiable</h4>
+                <p>
+                  Motorcycle fleet means we skip traffic. Same-day delivery is
+                  our standard, not an upgrade.
+                </p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M16 3C9 3 3 9 3 16s6 13 13 13 13-6 13-13S23 3 16 3z"
+                    stroke="#E8491D"
+                    stroke-width="2"
+                    fill="rgba(232,73,29,0.1)"
+                  />
+                  <path
+                    d="M10 16l4 4 8-8"
+                    stroke="#E8491D"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4>Tech-powered tracking</h4>
+                <p>
+                  Every order is logged in our dispatch system. You always know
+                  what's happening with your delivery.
+                </p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M4 12h24M4 20h24M12 4v24M20 4v24"
+                    stroke="#E8491D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    opacity="0.4"
+                  />
+                  <circle
+                    cx="16"
+                    cy="16"
+                    r="10"
+                    stroke="#E8491D"
+                    stroke-width="2"
+                    fill="rgba(232,73,29,0.1)"
+                  />
+                  <path
+                    d="M16 12v4l3 2"
+                    stroke="#E8491D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4>City-wide coverage</h4>
+                <p>
+                  20 delivery zones across Nairobi. CBD to the suburbs — if
+                  you're in Nairobi, we can reach you.
+                </p>
               </div>
             </div>
           </div>
-          <div class="social-row">
-            <a href="https://www.instagram.com/targetpoint_deliveries/" target="_blank" class="social-link" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-            </a>
-            <a href="https://wa.me/254797939390" target="_blank" class="social-link" aria-label="WhatsApp">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow">Transparent pricing</div>
+          <h2>
+            No hidden fees.<br /><span class="text-orange"
+              >Just fair rates.</span
+            >
+          </h2>
+          <p>
+            All rates are fixed and clear upfront. Pay via M-Pesa Till
+            <strong>9433707</strong> after delivery.
+          </p>
+        </div>
+        <div class="pricing-grid reveal">
+          <div class="price-card">
+            <div class="price-zone">CBD & surroundings</div>
+            <div class="price-examples">
+              Westlands · Ngara · Pangani · Upper Hill
+            </div>
+            <div class="price-from">From</div>
+            <div class="price-amount">KES 200</div>
+            <div class="price-note">Per delivery</div>
+          </div>
+          <div class="price-card price-card-mid">
+            <div class="price-badge">Most orders</div>
+            <div class="price-zone">Mid Nairobi</div>
+            <div class="price-examples">
+              Eastleigh · Kasarani · Roysambu · Ruaka
+            </div>
+            <div class="price-from">From</div>
+            <div class="price-amount">KES 300</div>
+            <div class="price-note">Per delivery</div>
+          </div>
+          <div class="price-card">
+            <div class="price-zone">Outer Nairobi</div>
+            <div class="price-examples">
+              Thika Rd · Ngong Rd · Rongai · Githurai
+            </div>
+            <div class="price-from">From</div>
+            <div class="price-amount">KES 400+</div>
+            <div class="price-note">Per delivery</div>
           </div>
         </div>
-        <div class="contact-right reveal">
-          <div class="enquiry-form">
-            <h3>Send an enquiry</h3>
-            <p>Tell us about your delivery need and we'll get back to you immediately.</p>
-            <div class="form-group">
-              <label>Your name</label>
-              <input type="text" id="fname" placeholder="e.g. John Kamau" />
+        <div class="pricing-note reveal">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#E8491D"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="8" x2="12" y2="12" />
+            <line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+          Exact rates depend on distance within zones. Call or WhatsApp for a
+          quick quote on your specific route.
+        </div>
+        <div class="pricing-mpesa reveal">
+          <div class="mpesa-label">M-Pesa Till Number</div>
+          <div class="mpesa-num">9433707</div>
+          <div class="mpesa-sub">Pay after delivery confirmation</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow">What clients say</div>
+          <h2>
+            Real businesses.<br /><span class="text-orange">Real results.</span>
+          </h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "We use Target Point for all our inter-office deliveries and
+              client document drops. Never had a late delivery. These guys are
+              as reliable as it gets."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">JM</div>
+              <div>
+                <div class="testi-name">James M.</div>
+                <div class="testi-role">Operations Manager, Nairobi</div>
+              </div>
             </div>
-            <div class="form-group">
-              <label>Phone number</label>
-              <input type="tel" id="fphone" placeholder="07XX XXX XXX" />
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "I run an online boutique and Target Point handles all my
+              deliveries. My customers are always happy — orders arrive same
+              day, every time."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">AW</div>
+              <div>
+                <div class="testi-name">Amina W.</div>
+                <div class="testi-role">Online Boutique Owner</div>
+              </div>
             </div>
-            <div class="form-group">
-              <label>Pickup location</label>
-              <input type="text" id="fpickup" placeholder="e.g. CBD, Tom Mboya Street" />
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "Quick response, professional riders, and the WhatsApp updates are
+              a nice touch. Target Point is now our go-to for all urgent
+              errands."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">PO</div>
+              <div>
+                <div class="testi-name">Peter O.</div>
+                <div class="testi-role">Procurement Officer</div>
+              </div>
             </div>
-            <div class="form-group">
-              <label>Drop-off location</label>
-              <input type="text" id="fdropoff" placeholder="e.g. Westlands, Parklands Ave" />
-            </div>
-            <div class="form-group">
-              <label>What are you sending? (optional)</label>
-              <input type="text" id="fitem" placeholder="e.g. Documents, parcel, package" />
-            </div>
-            <button class="btn-primary btn-full" id="sendEnquiry">Send via WhatsApp</button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">
-           <img src="images/logo2.png" alt="Target Point Deliveries Logo" width="150" height="50">
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="cta-band-inner">
+        <div class="cta-band-text reveal">
+          <h2>Ready to move something?</h2>
+          <p>
+            One call and our rider is on the way. Fast, reliable, always on
+            point.
+          </p>
         </div>
-        <p>Fast, Reliable and Always on Point.</p>
+        <div class="cta-band-actions reveal">
+          <a href="tel:0797939390" class="btn-primary btn-large">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+              />
+            </svg>
+            0797 939 390
+          </a>
+          <a
+            href="https://wa.me/254797939390?text=Hi%20Target%20Point%2C%20I%27d%20like%20to%20make%20a%20delivery%20enquiry."
+            target="_blank"
+            class="btn-outline-white"
+          >
+            WhatsApp Order
+          </a>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer-contact">
-        <a href="tel:0797939390">0797 939 390</a>
-        <a href="https://wa.me/254797939390" target="_blank">WhatsApp</a>
-        <span>Kenbanco House, Nairobi</span>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Target Point Deliveries & Errands. All rights reserved.</span>
-    </div>
-  </footer>
+    </section>
 
-  <script src="main.js"></script>
-</body>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-left reveal">
+            <div class="eyebrow">Get in touch</div>
+            <h2>
+              We're always<br /><span class="text-orange">ready to move.</span>
+            </h2>
+            <p>
+              Reach out via call, WhatsApp, or find us at our Nairobi office. We
+              respond fast — always.
+            </p>
+            <div class="contact-items">
+              <a href="tel:0797939390" class="contact-item">
+                <div class="ci-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-label">Call us</div>
+                  <div class="ci-value">0797 939 390</div>
+                </div>
+              </a>
+              <a
+                href="https://wa.me/254797939390"
+                target="_blank"
+                class="contact-item"
+              >
+                <div class="ci-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-label">WhatsApp</div>
+                  <div class="ci-value">+254 797 939 390</div>
+                </div>
+              </a>
+              <div class="contact-item">
+                <div class="ci-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-label">Location</div>
+                  <div class="ci-value">
+                    Kenbanco House, Opposite Railways, Nairobi
+                  </div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="ci-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <path d="M8 21h8M12 17v4" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-label">M-Pesa Till</div>
+                  <div class="ci-value">9433707</div>
+                </div>
+              </div>
+            </div>
+            <div class="social-row">
+              <a
+                href="https://www.instagram.com/targetpoint_deliveries/"
+                target="_blank"
+                class="social-link"
+                aria-label="Instagram"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="5" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/254797939390"
+                target="_blank"
+                class="social-link"
+                aria-label="WhatsApp"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-right reveal">
+            <div class="enquiry-form">
+              <h3>Send an enquiry</h3>
+              <p>
+                Tell us about your delivery need and we'll get back to you
+                immediately.
+              </p>
+              <div class="form-group">
+                <label>Your name</label>
+                <input type="text" id="fname" placeholder="e.g. John Kamau" />
+              </div>
+              <div class="form-group">
+                <label>Phone number</label>
+                <input type="tel" id="fphone" placeholder="07XX XXX XXX" />
+              </div>
+              <div class="form-group">
+                <label>Pickup location</label>
+                <input
+                  type="text"
+                  id="fpickup"
+                  placeholder="e.g. CBD, Tom Mboya Street"
+                />
+              </div>
+              <div class="form-group">
+                <label>Drop-off location</label>
+                <input
+                  type="text"
+                  id="fdropoff"
+                  placeholder="e.g. Westlands, Parklands Ave"
+                />
+              </div>
+              <div class="form-group">
+                <label>What are you sending? (optional)</label>
+                <input
+                  type="text"
+                  id="fitem"
+                  placeholder="e.g. Documents, parcel, package"
+                />
+              </div>
+              <button class="btn-primary btn-full" id="sendEnquiry">
+                Send via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img
+              src="/targetpointdeliveries/logo3.png"
+              alt="Target Point Deliveries Logo"
+              width="180"
+            />
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <a href="tel:0797939390">0797 939 390</a>
+          <a href="https://wa.me/254797939390" target="_blank">WhatsApp</a>
+          <span>Kenbanco House, Nairobi</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span
+          >© 2026 Target Point Deliveries & Errands. All rights reserved.</span
+        >
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
