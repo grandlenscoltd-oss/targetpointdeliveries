@@ -96,15 +96,14 @@ img { max-width: 100%; }
 .nav-inner {
   max-width: 1140px; margin: 0 auto;
   padding: 20px 24px;
-  display: flex; align-items: center; gap: 32px;
+  display: flex; align-items: center; gap: 50px;
 }
 .nav-logo {
   display: flex; align-items: center; gap: 10px;
   flex-shrink: 0;
 }
-.nav-logo-mark { width: 32px; height: 32px; }
-.nav-logo-mark svg { width: 100%; height: 100%; }
-.nav-logo-mark img { width: 100%; height: 100%; object-fit: contain; }
+.nav-logo-mark { width: 200px; height: 100px; }
+.nav-logo-mark img { width: 300%; height: 100%; object-fit: contain; }
 .nav-name { display: block; font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: #fff; line-height: 1.1; }
 .nav-sub { display: block; font-size: 10px; color: var(--orange); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
 .nav-links { display: flex; gap: 28px; margin-left: auto; }
