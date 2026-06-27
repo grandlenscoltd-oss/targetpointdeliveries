@@ -532,9 +532,8 @@ img { max-width: 100%; }
   display: flex; gap: 60px; flex-wrap: wrap; align-items: flex-start;
 }
 .footer-brand { flex: 1; min-width: 200px; }
-.footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.footer-logo svg { width: 28px; height: 28px; }
-.footer-logo span { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: #fff; }
+.footer-logo { display: flex; align-items: left; gap: 10px; margin-bottom: 12px; }
+.footer-logo img { left: 150px; top: 50px; transform: translate(-50%, -50%) scale(1.5); } 
 .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.4); font-style: italic; }
 .footer-links { display: flex; flex-direction: column; gap: 10px; }
 .footer-links a { font-size: 14px; color: rgba(255,255,255,0.55); transition: color 0.2s; }
