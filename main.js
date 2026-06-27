@@ -87,7 +87,7 @@ if (heroStat) {
   const heroStatObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        animateCounter(heroStat, 500);
+        animateCounter(heroStat, 1000);
         heroStatObserver.unobserve(entry.target);
       }
     });
