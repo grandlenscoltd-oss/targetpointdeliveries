@@ -119,17 +119,17 @@ Every future `git push` to `main` will automatically redeploy the live site.
 
 | Role | Name |
 |---|---|
-| 💻 Developer | **Victor Mutune** |
-| 🧠 Business owner & creative director | **Stephen Inzofu Osanya** — Director, Grandlens Company Ltd |
+| 🎨 Creative Director & AI Developer | **Victor Mutune** |(https://github.com/MutuneVictor)
+| 🧠 Business owner | **Stephen Inzofu Osanya** — Director, Grandlens Company Ltd |
 | 🤖 AI development collaborator | **Claude AI** (Anthropic) — [claude.ai](https://claude.ai) |
 
-This website was built by **Victor Mutune**, working in collaboration with **Claude AI** as the development partner, under the direction of **Stephen Osanya** — business owner and creative lead.
+This website was built by **Victor Mutune** (https://github.com/MutuneVictor), working in collaboration with **Claude AI** as the development partner, under the direction of **Stephen Osanya** — business owner and creative lead.
 
 ---
 
 ## 📄 License
 
-© 2026 **Target Point Deliveries & Errands**. All rights reserved.
+© 2026 **Target Point Deliveries**. All rights reserved.
 
 
 
