@@ -103,7 +103,7 @@ img { max-width: 100%; }
   flex-shrink: 0;
 }
 .nav-logo-mark { width: 200px; height: 100px; }
-.nav-logo-mark img { width: 300%; height: 100%; object-fit: contain; }
+.nav-logo-mark img { width: 100%; height: 100%; object-fit: contain; }
 .nav-name { display: block; font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: #fff; line-height: 1.1; }
 .nav-sub { display: block; font-size: 10px; color: var(--orange); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
 .nav-links { display: flex; gap: 28px; margin-left: auto; }
@@ -533,7 +533,7 @@ img { max-width: 100%; }
 }
 .footer-brand { flex: 1; min-width: 200px; }
 .footer-logo { display: flex; align-items: left; gap: 10px; margin-bottom: 12px; }
-.footer-logo img { left: 150px; top: 50px; transform: translate(-50%, -50%) scale(1.5); } 
+.footer-logo img { max-width: 180px; height: auto; display: block; }
 .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.4); font-style: italic; }
 .footer-links { display: flex; flex-direction: column; gap: 10px; }
 .footer-links a { font-size: 14px; color: rgba(255,255,255,0.55); transition: color 0.2s; }
